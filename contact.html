@@ -7,13 +7,17 @@
     <title>Contactanos</title>
 </head>
 <body>
-    <h2>Contactanos</h2>
-    <form action="/usuarios" method="POST">
-        <input type="text" name="name" placeholder="Name">
-        <input type="text" name="lastname" placeholder="Last Name">
-        <input type="email" name="email" placeholder="E-mail">
-        <input type="password" name="password" placeholder="Password">
-        <input type="submit">
+    <form action="/usuarios" method="POST" class="form-register">
+        <h2 class="form_title">Crea una cuenta</h2>
+        <div class="container-inputs">
+        <input type="text" name="name" placeholder="Name" class="input-48" required>
+        <input type="text" name="lastname" placeholder="Last Name" class="input-48" required>
+        <input type="email" name="email" placeholder="E-mail" class="input-100" required>
+        <input type="text" name="user" placeholder="Usuario" class="input-48" required>
+        <input type="password" name="password" placeholder="Password" class="input-48" required>
+        <input type="submit" class="btn-send">
+        </div>
     </form>
+    
 </body>
 </html>
